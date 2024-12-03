@@ -1,3 +1,4 @@
+import 'package:bookmenow/detalhes_servicos_page.dart';
 import 'package:bookmenow/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -6,6 +7,6 @@ void main() {
     title: "BookMeNow",
     debugShowCheckedModeBanner: false,
     theme: ThemeData(primaryColor: Colors.white),
-    home: const HomePage(),
+    home: const DetalhesServicosPage(),
   ));
 }
