@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:bookmenow/detalhes_servicos_page.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -109,7 +107,9 @@ class _HomePageState extends State<HomePage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const DetalhesServicosPage(),
+                        builder: (context) => DetalhesServicosPage(
+                          servico: servico,
+                        ),
                       ),
                     );
                   },
